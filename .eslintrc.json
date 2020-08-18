@@ -1,19 +1,45 @@
 {
 	"env": {
 		"browser": true,
-		"es6": true
+		"es2020": true
 	},
 	"extends": ["eslint:recommended", "plugin:react/recommended", "airbnb"],
-	"globals": {
-		"Atomics": "readonly",
-		"SharedArrayBuffer": "readonly"
-	},
 	"parserOptions": {
 		"ecmaFeatures": {
 			"jsx": true
 		},
-		"ecmaVersion": 2018
+		"ecmaVersion": 11
 	},
 	"plugins": ["react"],
-	"rules": {}
+	"rules": {
+		"react/destructuring-assignment": ["<enabled>", "always"],
+		"react/display-name": [
+			"<enabled>",
+			{
+				"ignoreTranspilerName": " <boolean>"
+			}
+		],
+		"react/prefer-es6-class": ["<enabled>", "<mode>"],
+		"react/no-unsafe": [
+			"<enabled>",
+			{
+				"checkAliases": " <boolean>"
+			}
+		],
+		"react/no-unknown-property": ["<enabled>", { "ignore": " <ignore>" }],
+		"react/no-unescaped-entities": [
+			"<enabled>",
+			{
+				"forbid": "Array<string>"
+			}
+		],
+		"react/prop-types": [
+			"<enabled>",
+			{
+				"ignore": " <ignore>",
+				"customValidators": "<customValidator>",
+				"skipUndeclared": "<skipUndeclared>"
+			}
+		]
+	}
 }

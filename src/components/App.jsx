@@ -1,7 +1,7 @@
 // import react from
 import React from 'react';
 
-//functional component
+// functional component
 export default function App() {
     return (
         <h1>
