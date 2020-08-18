@@ -2,7 +2,10 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
+//import app
+import App from './components/App'
+
 //creat root const
 const root = document.getElementById('app');
 
-ReactDom.render(<h1>Finally HEllo!!!</h1>, root);
+ReactDom.render(<App />, root);
