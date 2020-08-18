@@ -1,14 +1,19 @@
 {
 	"env": {
 		"browser": true,
-		"es2020": true
+		"es6": true
 	},
-	"extends": ["eslint:recommended", "plugin:react/recommended", "airbnb"],
+	"extends": ["airbnb"],
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
 	"parserOptions": {
 		"ecmaFeatures": {
 			"jsx": true
 		},
-		"ecmaVersion": 11
+		"ecmaVersion": 2018,
+		"sourceType": "module"
 	},
 	"plugins": ["react"],
 	"rules": {
@@ -26,7 +31,12 @@
 				"checkAliases": " <boolean>"
 			}
 		],
-		"react/no-unknown-property": ["<enabled>", { "ignore": " <ignore>" }],
+		"react/no-unknown-property": [
+			"<enabled>",
+			{
+				"ignore": " <ignore>"
+			}
+		],
 		"react/no-unescaped-entities": [
 			"<enabled>",
 			{
