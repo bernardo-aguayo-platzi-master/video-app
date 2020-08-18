@@ -1,4 +1,5 @@
-//import react
+/* eslint-disable no-unused-vars */
+// import react
 import React from 'react';
 
 //functional component
