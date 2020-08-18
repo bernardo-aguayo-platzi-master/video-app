@@ -11,12 +11,11 @@ html {
 }
 
 body {
-	background: #8f57fd;
+	background: black;
 }
 
 .header {
 	align-items: center;
-	background: #8f57fd;
 	color: white;
 	display: flex;
 	height: 100px;
@@ -88,7 +87,6 @@ ul:hover {
 }
 
 .categories__title {
-	background: #8f57fd;
 	color: white;
 	font-size: 16px;
 	margin-top: -16px;
@@ -102,6 +100,10 @@ ul:hover {
 	padding-left: 30px;
 	width: 100%;
 	position: relative;
+}
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
 }
 
 .carousel__container {
@@ -193,7 +195,6 @@ ul:hover {
 
 .footer {
 	align-items: center;
-	background-color: #8f57fd;
 	display: flex;
 	height: 100px;
 	width: 100%;
