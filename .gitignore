@@ -3,3 +3,6 @@ node_modules
 
 #eslint
 .eslinttrc.json
+
+#.vscode
+.vscode
