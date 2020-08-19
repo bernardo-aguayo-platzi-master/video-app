@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className='footer'>
       <a href='/'>Terms of use</a>
       <a href='/'>Privacy statement</a>
-      <a href='/'>Centro de ayuda</a>
+      <a href='/'>Help Center</a>
     </footer>
   )
 }
