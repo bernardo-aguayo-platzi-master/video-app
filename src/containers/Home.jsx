@@ -9,7 +9,7 @@ import CarouselItem from '../components/CarouselItem';
 import Footer from '../components/Footer';
 
 // functional component
-export default function App() {
+export default function Home() {
   // use state hook
   const [characters, setCharacters] = useState([]);
 
