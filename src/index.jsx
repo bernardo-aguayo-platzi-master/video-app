@@ -4,7 +4,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 
 // import app
-import Home from './containers/Home'
+import App from './routes/App'
 
 // import global styles
 import './index.css'
@@ -12,4 +12,4 @@ import './index.css'
 // creat root const
 const root = document.getElementById('app');
 
-ReactDom.render(<Home />, root);
+ReactDom.render(<App />, root);

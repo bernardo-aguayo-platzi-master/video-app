@@ -2,12 +2,13 @@
 import React from 'react';
 
 //import browser router
-import {BrowserRouter, Route} from 'react-router-dom'
+import { HashRouter, Route } from 'react-router-dom'
+import Home from '../containers/Home';
 
-const Routes = () => (
-  <BrowserRouter>
-    <Route></Route>
-  </BrowserRouter>
+const App = () => (
+  <HashRouter basename='/'>
+    <Route exact path='/' component={Home}/>
+  </HashRouter>
 )
 
-export default Routes;
+export default App;
