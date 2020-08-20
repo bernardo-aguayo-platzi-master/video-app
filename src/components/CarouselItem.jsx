@@ -5,7 +5,7 @@ import plusIcon from '../assets/plus-icon.png'
 import playIcon from '../assets/play-icon.png'
 
 //functional component
-export default function CarouselItem({ image, id }) {
+export default function CarouselItem({ image }) {
   return (
     <div className='carousel-item'>
       <img className='carousel-item__img' src={image} alt='' />
