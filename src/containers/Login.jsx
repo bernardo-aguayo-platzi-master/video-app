@@ -4,11 +4,15 @@ import React from 'react';
 //insert styles
 import './styles/Login.css'
 
+//import google and twitter icons
+import google from '../assets/google-icon.png'
+import Twitter from '../assets/twitter-icon.png'
+
 //functional component
 const Login = () => (
   <section className='login' >
     <section className='login__container' >
-      <h2>Inicia sesión</h2>
+      <h2>Log In</h2>
       <form className='login__container--form' >
         <input className='input' type='text' placeholder='Correo' />
         <input className='input' type='password' placeholder='Password' />
@@ -23,10 +27,10 @@ const Login = () => (
       </form >
       <section className='login__container--social-media' >
         <div>
-          <img src='../assets/google-icon.png' /> Log In with Google
+          <img src={google} /> Log In with Google
         </div>
         <div>
-          <img src='../assets/twitter-icon.png' /> Log In with Twitter
+          <img src={Twitter} /> Log In with Twitter
         </div>
       </section >
       <p className='login__container--register' >
