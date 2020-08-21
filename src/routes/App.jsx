@@ -2,18 +2,22 @@
 import React from 'react';
 
 //import browser router
-import { HashRouter, Route } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 
 //import components
 import Home from '../containers/Home';
 import Login from '../containers/Login'
 import Register from '../containers/Register';
+import NotFound from '../containers/NotFound';
 
 const App = () => (
   <HashRouter basename='/'>
-    <Route exact path='/' component={Home}/>
-    <Route exact path='/login' component={Login}/>
-    <Route exact path='/register' component={Register}/>
+    <Switch>
+      <Route exact path='/' component={Home} />
+      <Route exact path='/login' component={Login} />
+      <Route exact path='/register' component={Register} />
+      <Route component={NotFound}/>
+    </Switch>
   </HashRouter>
 )
 
