@@ -1,12 +1,10 @@
 /* eslint-disable no-unused-vars */
 // import react from
 import React, { useState, useEffect } from 'react';
-import Header from '../components/Header';
 import Search from '../components/Search';
 import Categories from '../components/Categories';
 import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
-import Footer from '../components/Footer';
 
 // functional component
 export default function Home() {
@@ -28,7 +26,6 @@ export default function Home() {
 
   return (
     <React.Fragment>
-      <Header />
       <Search />
 
       <Categories>
@@ -42,8 +39,6 @@ export default function Home() {
           }
         </Carousel>
       </Categories>
-
-      <Footer />
     </React.Fragment>
   )
 }
